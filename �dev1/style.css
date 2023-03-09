@@ -1,0 +1,183 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Popins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body {
+    background: url(/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Start */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+header nav .logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+nav ul li a:hover {
+    color: #0ba2c0;
+    transition: color .25s ease;
+
+}
+
+nav .menu {
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+}
+
+nav .menu .menu-button {
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 56px;
+    padding: 12px 24px;
+    transition: all .25s ease;
+
+}
+
+nav .menu .menu-button:hover {
+    color: white;
+    background-color: #0ba2c0;
+
+}
+
+
+/* Header End */
+
+/* Section Start */
+.content {
+    color: white;
+    height: (100vh-100px);
+    padding-top: 150px;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a {
+    padding: 20px;
+    border-radius: 56px;
+    width: 280px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+
+    background-color: #0ba2c0;
+    color: white;
+    transition: all .15s ease-in;
+}
+
+/* Section Edn */
+/* Responsive start */
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+    .menu ul {
+        column-gap: 20px;
+    }
+
+    .menu .menu-button {
+        display: none;
+    }
+
+    /* Section Start */
+    .content {
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .content .links a {
+        padding: 14px;
+        width: 90%;
+    }
+
+    header nav .logo a {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    /* Section End */
+
+}
+
+/* Responsive end */
