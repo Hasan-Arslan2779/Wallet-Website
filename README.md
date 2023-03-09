@@ -19,6 +19,6 @@
   </ul>
 
   <h2>Screenshot</h2>
- <img src="" alt="gif">
+ <img src="https://github.com/Hasan-Arslan2779/Wallet-Website/blob/master/web.gif" alt="gif">
 
   <p>This project was created by Hasan, based on a design by Hasan Arslan.</p>
